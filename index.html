@@ -12,35 +12,11 @@
 
 <body>
   <h1 id="level-title">Welcome to Simon Game!</h1>
-  <div class='start-btn'>START</div>
-  <div class="flex-container">
-  <div class="container flex-item-left">
-    <div class="row">
-
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-    <div class='restart-icon'>RESTART</div>
-  </div>
-  <div class="instruction flex-item-right">
-    <h3 class="instruction-title ">INSTRUCTIONS</h3>
-      <p>
+  <div class='start-btn gameboy-btn'>START</div>
+  <div class='restart-icon gameboy-btn'>RESTART</div>
+  <div class="instruction-btn gameboy-btn">RULES</div>
+  <div class="instruction">
+    <p>
       1. Press the START button. 
       </p>
       <p>
@@ -64,8 +40,39 @@
       <p>
       8. Press RESTART to start the game again.
       </p>
+      <p class="sRules">
+        TAP "RULES" AGAIN TO CLOSE THIS.
+      </p>
+  </div>
+
     </div>
-</div>
+  <div class="flex-container">
+  <div class="container flex-item-left">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green" >
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="instruction flex-item-right">
+   
+</div> -->
 <div class="footer"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./index.js" charset="utf-8"></script>
