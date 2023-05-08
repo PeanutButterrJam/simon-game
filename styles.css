@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  4%;
+  margin:  3% 4% 4% 4%;
   color: #FEF2BF;
 }
 
@@ -14,7 +14,7 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
@@ -53,10 +53,9 @@ body {
   background-color: grey;
 }
 
-.start-btn{
+.gameboy-btn{
   text-align: center;
   display: inline-block;
-  margin:200px auto 5px auto;
   font-weight: bold;
   padding: 10px 0 10px 10px ;
   background-color: red;
@@ -70,57 +69,47 @@ body {
   cursor: pointer;
   font-family: 'Press Start 2P', cursive;
   font-size: 30pt;
+}
+
+.start-btn{
   display: inline;
+  margin-right: 10px;
 }
 
 .restart-icon{
-  text-align: center;
-  display: inline-block;
-  margin:5px;
-  font-weight: bold;
-  padding: 10px 0 10px 10px ;
-  background-color: red;
-  text-shadow: -1px -1px black, 1px 1px white;
-  color: white;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -o-border-radius: 7px;
-  border-radius: 7px;
-  box-shadow: 0 .2em maroon; 
-  cursor: pointer;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 30pt;
   display: none;
+  margin-right: 10px;
 }
 
-.start-btn:active {
-	box-shadow: none;
-	position: relative;
-	top: .2em;
-}
-
-.restart-icon:active {
+.gameboy-btn:active {
 	box-shadow: none;
 	position: relative;
 	top: .2em;
 }
 
 .instruction{
-  width: 300px;
   color: white;
-  text-align: left;
-  font-size: 1.3rem;
+  text-align: center;
+  font-size: 0.5rem;
   line-height: 15px;
-  margin-right: 20px;
-  margin-bottom: 40px ;
+  margin-bottom: 10px ;
   letter-spacing: 2px;
   line-height: 1;
   font-family: 'Odibee Sans', cursive;
+  display: none;
+  font-size: 1.2rem;
 }
 
-.instruction-title{
-  text-align: center;
+.sRules{
+  font-size: 2rem;
+  font-weight: bold;
 }
+
+/* 
+.instruction-button:hover {
+color:#000000;
+background-color:#FFFFFF;
+} */
 
 p{  
   margin-left: 10px;
@@ -154,8 +143,67 @@ p:first-child{
   flex: 20%;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
+@media screen and (min-device-width: 100px) and (max-device-width: 413px){
+  body {
+    zoom: 1.6;   
+ }
+
+ #level-title{
+  margin-top: 10%;
+  line-height: 1.5;
+ }
+
+ .container{
+  margin-top: 10px;
+ }
+
+ .instruction{
+  font-size: 0.8rem;
+ }
+ .sRules{
+  font-size: 1rem;
+ }
+}
+
+@media screen and (min-device-width: 414px) and (max-device-width: 767px){
+  body {
+    zoom: 1.4;   
+ }
+
+ #level-title{
+  margin-top: 10%;
+  line-height: 1.5;
+ }
+
+ .btn{
+  zoom: 1.2; 
+ }
+
+ .container{
+  margin-top: 10px;
+ }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1000px){
+  body {
+    zoom: 1.1;   
+ }
+
+ #level-title{
+  margin-top: 10%;
+  line-height: 1.5;
+ }
+
+ .btn{
+  zoom: 1.4; 
+ }
+
+ .container{
+  margin-top: 10px;
+ }
+}
+
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.7;
 }
