@@ -8,17 +8,25 @@ var started = false;
 
 var level = 0;
 
+$( document ).ready(function() {
+  console.log("ready!")
+  if (started = true) {
+    $(".btn").addClass("disabledbutton");
+  }else if (started = false) {
+    $(".btn").removeClass("disabledbutton");
+  }
+});
+
 $(".start-btn").on("click",function() {
-  if (!started) {
+  if (started = true) {
     $("h1").text("Level " + level);
+    $(".btn").removeClass("disabledbutton");
     nextSequence();
     started = true;
     $(".start-btn").css("display", "none");
     $(".restart-icon").css("display", "inline");
-    $("#level-title").css("margin", "3.5%");
   }
 });
-
 
 $(".btn").on("click", function() {
   var userChosenColour = $(this).attr("id");
@@ -32,8 +40,16 @@ $(".restart-icon").on("click", function(){
   $("h1").text("Welcome to Simon Game!");
   $(".start-btn").css("display", "inline");
   $(".restart-icon").css("display", "none");
-  $("#level-title").css("margin", "5%");
+  $(".btn").addClass("disabledbutton");
   startOver();
+});
+
+$(".instruction-btn").on("click", function(){
+  if ($(".instruction").is(":hidden")){
+    $(".instruction").css("display", "inline");
+  }else{
+    $(".instruction").css("display", "none");
+  }
 });
 
 function checkAnswer(currentLevel) {
@@ -118,10 +134,4 @@ function animatePress(currentColor) {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
 };
-
-// $(".start-btn").on("click", function(){
-//   level = 0;
-//   gamePattern = [];
-//   started = false;
-// });
 
