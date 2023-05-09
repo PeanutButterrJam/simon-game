@@ -1,23 +1,78 @@
 <!DOCTYPE html>
-<html lang="en"  data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <title>Molly Ho (@mollyrighthere)</title>
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
-    <link rel="stylesheet" href="../src/index.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="icon" href="./image/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,600;1,500;1,700&family=Pacifico&family=Satisfy&family=Yeseva+One&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-    <script src="../src/index.js" type="text/jsx"></script>
-    
-    
-  </body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Welcome to Simon Game!</h1>
+  <div class='start-btn gameboy-btn'>START</div>
+  <div class='restart-icon gameboy-btn'>RESTART</div>
+  <div class="instruction-btn gameboy-btn">RULES</div>
+  <div class="instruction">
+    <p>
+      1. Press the START button.
+      </p>
+      <p>
+      2. You will receive a signal.
+      </p>
+      <p>
+      3. Repeat the signal by pressing the same color.
+      </p>
+      <p>
+      4. It will duplicate the first signals and add one.
+      </p>
+      <p>
+      5. Repeat these two signals by pressing the same color button, in order.
+      </p>
+      <p>
+      6. Continue playing as long as you can repeat each sequence of signals correctly.
+      </p>
+      <p>
+      7. If you fail to repeat a sequence exactly, you will hear a "WRONG" sound effect plus RED screen.
+      </p>
+      <p>
+      8. Press RESTART to start the game again.
+      </p>
+      <p class="sRules">
+        TAP "RULES" AGAIN TO CLOSE THIS.
+      </p>
+  </div>
+
+    </div>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green" >
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+  </div>
+
+<div class="footer"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./index.js" charset="utf-8"></script>
+</body>
+
 </html>
