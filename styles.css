@@ -105,12 +105,6 @@ body {
   font-weight: bold;
 }
 
-/* 
-.instruction-button:hover {
-color:#000000;
-background-color:#FFFFFF;
-} */
-
 p{  
   margin-left: 10px;
   padding-right: 10px;
@@ -143,6 +137,7 @@ p:first-child{
   flex: 20%;
 }
 
+
 @media screen and (min-device-width: 100px) and (max-device-width: 413px){
   body {
     zoom: 1.6;   
@@ -158,10 +153,14 @@ p:first-child{
  }
 
  .instruction{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
  }
  .sRules{
   font-size: 1rem;
+ }
+
+ .gameboy-btn{
+  font-size: 20pt;
  }
 }
 
@@ -182,6 +181,10 @@ p:first-child{
  .container{
   margin-top: 10px;
  }
+
+ .instruction{
+  zoom: 1.3rem;
+ }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1000px){
@@ -201,9 +204,10 @@ p:first-child{
  .container{
   margin-top: 10px;
  }
+
 }
 
 .disabledbutton {
   pointer-events: none;
   opacity: 0.7;
-}
+};
